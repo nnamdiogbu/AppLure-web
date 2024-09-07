@@ -12,6 +12,7 @@ const isActive = (href) => {
   if (currentPath === "" && href == "/") return true;
   if (currentPath !== "" && href.startsWith(`/${currentPath}`)) return true;
 };
+
 ---
 
 <header
@@ -64,7 +65,7 @@ const isActive = (href) => {
         )
       }
 
-      <ColorSwitch client:load />
+      <!-- <ColorSwitch client:load /> -->
 
       <div class="md:hidden">
         <NavMobile
